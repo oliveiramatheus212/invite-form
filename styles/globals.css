@@ -39,7 +39,7 @@
 
     /* Text Colors */
     --text-body: #C8CDD0;
-    --tetx-heading: #F9F9F9;
+    --text-heading: #F9F9F9;
 
     /* Typography */
 
@@ -47,10 +47,10 @@
     --baloo-2: "Baloo 2", sans-serif;
     --open-sans: "Open Sans", sans-serif;
 
-    --text-logo: 400 2.5rem/auto var(--leckerli-one);
-    --heading-md: 700 1.75rem/auto var(--baloo-2);
-    --heading-sm: 700 1.125rem/auto var(--baloo-2);
-    --body-md: 400 1rem/auto var(--open-sans);
-    --body-sm: 400 0.875rem/auto var(--open-sans);
-    --body-xs: 400 0.75rem/auto var(--open-sans);
+    --text-logo: 400 2.5rem/normal var(--leckerli-one);
+    --heading-md: 700 1.75rem/normal var(--baloo-2);
+    --heading-sm: 700 1.125rem/normal var(--baloo-2);
+    --body-md: 400 1rem/normal var(--open-sans);
+    --body-sm: 400 0.875rem/normal var(--open-sans);
+    --body-xs: 400 0.75rem/normal var(--open-sans);
 }
