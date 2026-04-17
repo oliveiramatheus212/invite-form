@@ -54,3 +54,7 @@
     --body-sm: 400 0.875rem/normal var(--open-sans);
     --body-xs: 400 0.75rem/normal var(--open-sans);
 }
+
+body {
+    overflow: hidden;
+}

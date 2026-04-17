@@ -48,4 +48,20 @@
     height: 100vh;
 
     padding: 5rem 8.12rem 5rem 8.12rem;
+
+    & h1 {
+        font: var(--heading-md);
+        color: var(--text-heading);
+    }
+
+    & .header {
+        display: flex;
+        align-items: center;
+
+        & h1 {
+            margin-left: 0.75rem;
+            font: var(--heading-sm);
+            color: var(--text-heading);
+        }
+    }
 }
