@@ -31,7 +31,7 @@
 
           <form method="post" enctype="multipart/form-data">
             <fieldset class="about">
-              <div class="header">
+              <div class="section-header">
                 <img src="assets/icons/calendar.svg" alt="Calendar Icon" />
                 <h1>Sobre o evento</h1>
               </div>
@@ -49,7 +49,7 @@
                 <div class="input-wrapper flex-1">
                   <label for="start-date">Início</label>
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="start-date"
                     name="start-date"
                     lang="pt-BR"
@@ -60,12 +60,189 @@
                 <div class="input-wrapper flex-1">
                   <label for="end-date">Fim</label>
                   <input
-                    type="date"
+                    type="datetime-local"
                     id="end-date"
                     name="end-date"
                     lang="pt-BR"
                     required
                   />
+                </div>
+              </div>
+
+              <div class="flex">
+                <div class="input-wrapper flex-1">
+                  <label for="event-type">Tipo</label>
+                  <div class="radio-group">
+                    <label class="radio-option" for="event-type-presential">
+                      <input
+                        type="radio"
+                        id="event-type-presential"
+                        name="event-type"
+                        value="presential"
+                        checked
+                      />
+                      <span class="radio-option-content">
+                        <img
+                          src="assets/icons/building-2.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                        <span>Presencial</span>
+                      </span>
+                    </label>
+
+                    <label class="radio-option" for="event-type-online">
+                      <input
+                        type="radio"
+                        id="event-type-online"
+                        name="event-type"
+                        value="online"
+                      />
+                      <span class="radio-option-content">
+                        <img
+                          src="assets/icons/video.svg"
+                          alt=""
+                          aria-hidden="true"
+                        />
+                        <span>Online</span>
+                      </span>
+                    </label>
+                  </div>
+                </div>
+
+                <div class="input-wrapper flex-1">
+                  <label for="local">Local</label>
+                  <input
+                    type="text"
+                    id="local"
+                    name="local"
+                    placeholder="Link ou endereço"
+                  />
+                </div>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="description">Descrição</label>
+                <textarea
+                  id="description"
+                  name="description"
+                  placeholder="Escreva sobre os detalhes do evento"
+                  rows="6"
+                ></textarea>
+              </div>
+            </fieldset>
+
+            <fieldset class="customization">
+              <div class="section-header">
+                <img
+                  src="./assets/icons/paintbrush-vertical.svg"
+                  alt="Paintbrush Icon"
+                />
+                <h1>Personalização</h1>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="">Cor principal</label>
+
+                <div class="color-radio-group">
+                  <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--brand-light)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--purple)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--fuschia)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--pink)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--orange)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--yellow)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--lime)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--green)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--cyan)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--navy)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
+
+                <label class="color-radio-option">
+                  <input type="radio" name="main-color" value="brand-light" />
+                  <span
+                    class="color-radio-swatch"
+                    style="--color-swatch: var(--purple)"
+                    aria-hidden="true"
+                  ></span>
+                </label>
                 </div>
               </div>
             </fieldset>
