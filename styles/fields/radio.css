@@ -1,0 +1,63 @@
+.radio-group {
+	background-color: var(--input-base);
+	width: 100%;
+	border-radius: 0.5rem;
+	border: 2px solid transparent;
+	outline: 1px solid var(--input-stroke);
+	padding: 0.25rem;
+
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 0.25rem;
+}
+
+.radio-option {
+	margin-bottom: 0;
+	cursor: pointer;
+}
+
+.radio-option input {
+	position: absolute;
+	opacity: 0;
+	pointer-events: none;
+}
+
+.radio-option-content {
+	border-radius: 0.375rem;
+	padding: 0.5rem 1rem;
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 0.5rem;
+
+	color: var(--text-body);
+	font: var(--body-md);
+
+	transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.radio-option-content img {
+	width: 1rem;
+	height: 1rem;
+}
+
+.radio-option:hover .radio-option-content {
+	background-color: var(--shape-hover);
+}
+
+.radio-option input:checked + .radio-option-content {
+	background-color: var(--shape-button);
+	color: var(--text-heading);
+	font-weight: 600;
+}
+
+.radio-option input:checked + .radio-option-content img {
+	filter: brightness(0) saturate(100%) invert(66%) sepia(71%) saturate(1824%)
+		hue-rotate(176deg) brightness(102%) contrast(101%);
+}
+
+.radio-option input:focus-visible + .radio-option-content {
+	outline: 1px solid var(--brand-light);
+	outline-offset: -1px;
+}
