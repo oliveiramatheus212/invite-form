@@ -1,6 +1,7 @@
 @import url(fields/index.css);
 form {
     display: flex;
+    flex-direction: column;
     margin-top: 2.5rem;
 
     gap: 1.5rem;
@@ -16,4 +17,48 @@ fieldset {
 
 fieldset + fieldset {
     margin-top: 3rem;
+}
+
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--input-stroke);
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer .items {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.submit-button {
+  align-self: flex-end;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.75rem;
+  border: none;
+  background-color: var(--brand-mid);
+  color: var(--text-heading);
+  font: 600 1rem/1.2 var(--open-sans);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.submit-button:hover {
+  background-color: var(--brand-dark);
+}
+
+.submit-button:focus-visible {
+  outline: 2px solid var(--text-heading);
+  outline-offset: 2px;
+}
+
+.submit-button img {
+  width: 1.25rem;
+  height: 1.25rem;
 }
