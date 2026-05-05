@@ -262,7 +262,7 @@
                   </label>
 
                   <label class="theme-radio-option">
-                    <input type="radio" name="theme" value="kids"/>
+                    <input type="radio" name="theme" value="kids" />
                     <span class="theme-radio-content">
                       <img
                         src="assets/images/image-3.png"
@@ -273,7 +273,7 @@
                   </label>
 
                   <label class="theme-radio-option">
-                    <input type="radio" name="theme" value="graduation"/>
+                    <input type="radio" name="theme" value="graduation" />
                     <span class="theme-radio-content">
                       <img
                         src="assets/images/image-4.png"
@@ -284,7 +284,7 @@
                   </label>
 
                   <label class="theme-radio-option">
-                    <input type="radio" name="theme" value="marriage"/>
+                    <input type="radio" name="theme" value="marriage" />
                     <span class="theme-radio-content">
                       <img
                         src="assets/images/image-5.png"
@@ -295,7 +295,7 @@
                   </label>
 
                   <label class="theme-radio-option">
-                    <input type="radio" name="theme" value="baby-shower"/>
+                    <input type="radio" name="theme" value="baby-shower" />
                     <span class="theme-radio-content">
                       <img
                         src="assets/images/image-6.png"
@@ -306,7 +306,7 @@
                   </label>
 
                   <label class="theme-radio-option">
-                    <input type="radio" name="theme" value="bridal-shower"/>
+                    <input type="radio" name="theme" value="bridal-shower" />
                     <span class="theme-radio-content">
                       <img
                         src="assets/images/image-7.png"
@@ -387,12 +387,66 @@
               <div class="input-wrapper flex">
                 <div class="flex-1">
                   <label>Estilo</label>
-                  <input type="radio">
+
+                  <div class="style-toggle-field">
+                    <label class="style-toggle" for="event-style-toggle">
+                      <input type="checkbox" id="event-style-toggle" />
+                      <span class="style-toggle-ui" aria-hidden="true">
+                        <span class="style-toggle-thumb"></span>
+                      </span>
+                      <span class="style-toggle-text style-toggle-text-off"
+                        >Escuro</span
+                      >
+                    </label>
+                  </div>
                 </div>
 
                 <div class="flex-2">
-                  <label>Foto de capa</label>
-                  <input type="file">
+                  <label for="cover-photo">Foto de capa</label>
+
+                  <div class="file-upload">
+                    <input
+                      type="file"
+                      id="cover-photo"
+                      name="cover-photo"
+                      class="file-input-hidden"
+                      accept="image/*"
+                    />
+                    <label for="cover-photo" class="file-upload-button"
+                      >Selecionar</label
+                    >
+                    <span class="file-upload-name"
+                      >Nenhum arquivo selecionado</span
+                    >
+                  </div>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="contact">
+              <div class="section-header">
+                <img src="/assets/icons/contact.svg" alt="Contact Icon">
+                <h1>Dados para contato</h1>
+              </div>
+
+              <div class="input-wrapper">
+                <label for="guest-name">Nome</label>
+                <input type="text" name="guest-name" id="guest-name" placeholder="Nome completo" required aria-describedby="guest-name-error">
+                <p class="field-error" id="guest-name-error">
+                  <img src="assets/icons/circle-alert.svg" alt="Error Icon" aria-hidden="true">
+                  Campo obrigatório
+                </p>
+              </div>
+
+              <div class="input-wrapper flex">
+                <div class="flex-1">
+                  <label for="guest-email">E-mail</label>
+                  <input type="email" name="guest-email" id="guest-email" placeholder="exemplo@email.com">
+                </div>
+
+                <div class="flex-1">
+                  <label for="guest-phone">Telefone</label>
+                  <input type="text" name="guest-phone" id="guest-phone" placeholder="(99) 99999-9999">
                 </div>
               </div>
             </fieldset>
